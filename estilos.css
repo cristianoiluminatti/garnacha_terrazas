@@ -4,7 +4,7 @@ body{
     height: 2000px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: #000;
-    background-image: url(https://github.com/cristianoiluminatti/garnacha_terrazas/blob/main/soldadorin.jpg.?raw=true);
+    background-image: url(https://github.com/cristianoiluminatti/garnacha_terrazas/blob/main/soldadorin.jpg?raw=true);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -198,7 +198,7 @@ input{
     }
 }
 .text{
-    position: relative;
+    position: absolute;
     height: 25px;
     left: 20%;
     top: 20%;
