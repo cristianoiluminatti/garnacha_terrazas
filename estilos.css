@@ -182,7 +182,7 @@ input{
     border-color: black;
     border-radius: 8px;
 }
-.final:hover{
+.final img:hover{
     transform: scale(1.122);
     transition: all 0.4s linear;
     filter: drop-shadow(12px 12px 8px rgba(232, 240, 122, 0.6));
