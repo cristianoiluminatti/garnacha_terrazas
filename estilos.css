@@ -1,5 +1,5 @@
 *{
-    mrgin: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -89,6 +89,10 @@ h3{
     height:  30px;
     clear: both;
 }
+.separador1{
+    height: 28px;
+    clear: both;
+}
 
 .container_slider{
     position: absolute;
@@ -107,9 +111,7 @@ input{
    
 }
 .container{
-    width: 100%;
     width: 800px;
-    height: 100%;
     height: 600px;
     transform-style: preserve-3d;
     display: flex;
@@ -166,7 +168,10 @@ input{
     transform: translateX(0%) scale(1);
     z-index: 1;
 }
-
+.separador1{
+    height: 28px;
+    clear: both;
+}
 
 
 .separador2{
