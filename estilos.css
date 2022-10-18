@@ -64,7 +64,7 @@ h2{
 }
 
 
-card1{
+.card1{
     width: 1350px;
     height: 350px;
     margin: 36px;
@@ -91,7 +91,7 @@ h3{
 }
 
 
-.container_slider{
+container_slider{
     position: absolute;
     max-width: 1500px;
     height: 800px;
@@ -107,7 +107,7 @@ input{
     align-items: bottom center;
    
 }
-.container{
+container{
     width: 800px;
     height: 600px;
     transform-style: preserve-3d;
