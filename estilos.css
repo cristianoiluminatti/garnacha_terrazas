@@ -137,7 +137,7 @@ input{
     object-fit: cover;
 }
 .cards img:hover{
-    transform: scale(1.522);
+    transform: scale(1.252);
     transition: all 0.4s linear;
     box-shadow: 1px 1px 15px 15px  rgba(232, 240, 122, 0.6);
     
