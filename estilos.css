@@ -166,7 +166,7 @@ input{
     width: 30px;
     clear: both;
 }
-.final {
+.final{
     width: 60%;
     padding-left: 250px;
     padding-top: 90px;
@@ -175,16 +175,17 @@ input{
     background-position: center;
     
 }
-.final:hover{
+.final img{
+    border-style: solid;
+    border-color: black;
+    border-radius: 8px;
+}
+.final img:hover{
     transform: scale(1.122);
     transition: all 0.4s linear;
     filter: drop-shadow(12px 12px 8px rgba(232, 240, 122, 0.6));
 }
-.final img{
-    border-style: solid;
-    border-color: black;
-    border-radius: 10px;
-}
+
 
 @keyframes neonEffect{
     0%, 35%, 45%, 65%, 100%{
