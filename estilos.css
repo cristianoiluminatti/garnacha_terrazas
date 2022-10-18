@@ -1,26 +1,33 @@
 
 body{
-    width: 1600px;
-    height: 1900px;
+    max-width: 1000px;
+    height: 1400px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: #000;
-}
+    background:#000;
+    background-image: url(image/soldadorin.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 100%;
 
+}
 
 .menu{
     text-align: left;
     list-style: none;
-    padding: 0%;
+    padding: 10px;
     background: #000;
-    width: 400%;
-    align-items: center;
-    margin: center;
+    width: 150%;
+    align-items: center left;
+    margin: auto;
     
 }
 .menu li a{
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    color: aliceblue;
-    padding: 20px;
+    color: #fff;
+    padding: 10px;
     display: block;
 }
 .menu li{
@@ -32,6 +39,7 @@ body{
     background: #a34f4f;
     
 }  
+/*------hasta aca es el menu------*/
 h1{
     margin: 30px;
     width: 200px;
@@ -39,19 +47,23 @@ h1{
     color: #c3e128;
     font-size: 3cm;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+    animation: neonEffect 6s infinite;
 }
 h2{
-    margin: 30px;
+    margin: 40px;
     width: 200px;
     height: 87px;
     color: #c3e128;
     font-size: 1cm;    
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: neonEffect 3s infinite;
 }
-.card{
-    width: 1450px;
-    margin: 5px;
+
+
+.card1{
+    width: 1350px;
+    height: 350px;
+    margin: 36px;
     padding: 10px;
     box-shadow: 20px 20px 50px rgba(232, 240, 122, 0.6);
     background-color: rgba(255,255,255,0.1);
@@ -59,6 +71,7 @@ h2{
     border-top:  1px solid rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     backdrop-filter: blur(5px);
+    justify-content: center;
 }
 h3{
     text-align: center;
@@ -69,84 +82,89 @@ h3{
 
 
 .separador1{
-    height:  60px;
+    height:  30px;
     clear: both;
 }
-
-.contenido-total{
-    width: 300px;
-    margin: auto;
-    perspective: 600px;
-    position: relative;
-    margin-top: 100px;
-}
-.contenido-carrousel{
-    width: 80%;
+/*---desde aca es eñ carrusel de fotos triple---*/
+.container_slider{
     position: absolute;
-    animation: rotar 30s infinite linear;
+    max-width: 1500px;
+    height: 800px;
+    margin-left: 300px;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    padding: 30px 10px;
+}
+input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.container{
+    width: 100%;
+    width: 800px;
+    height: 100%;
+    height: 600px;
     transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.contenido-carrousel:hover{
-    animation-play-state: paused;
-    cursor: pointer;
+.cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
 }
-.contenido-carrousel figure{
-    width: 210px;
-    height: 150px;
-    overflow: hidden;
+.card{
     position: absolute;
-    box-shadow: 1px 1px 3px 1px black;
+    width: 60%;
+    height: 100%;
+    border: solid 1px #000;
+    border-radius: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.contenido-carrousel figure:hover{
-    box-shadow: 1px 1px 25px 1px rgba(242, 242, 2, 0.92) ;
+.cards img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.cards img:hover{
+    box-shadow: 1px 1px 15px 15px  rgba(232, 240, 122, 0.6);
     transition: all 300ms;
 }
 
+#item-2:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-2{
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+#item-3:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-2,
+#item-2:checked ~ .cards #selector-3{
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+#item-1:checked ~ .cards #selector-1,
+#item-2:checked ~ .cards #selector-2,
+#item-3:checked ~ .cards #selector-3{
+    transform: translateX(0%) scale(1);
+    z-index: 1;
+}
 
-.contenido-carrousel figure:nth-child(1){transform: rotateY(0deg)
-    translateZ(300px);}
-.contenido-carrousel figure:nth-child(2){transform: rotateY(40deg)
-    translateZ(300px);}
-.contenido-carrousel figure:nth-child(3){transform: rotateY(80deg)
-    translateZ(300px);}
-.contenido-carrousel figure:nth-child(4){transform: rotateY(120deg)
-    translateZ(300px);}
-.contenido-carrousel figure:nth-child(5){transform: rotateY(160deg)
-    translateZ(300px);}
-.contenido-carrousel figure:nth-child(6){transform: rotateY(200deg)
-    translateZ(300px);}
-.contenido-carrousel figure:nth-child(7){transform: rotateY(240deg)
-    translateZ(300px);}
-.contenido-carrousel figure:nth-child(8){transform: rotateY(280deg)
-    translateZ(300px);}
-.contenido-carrousel figure:nth-child(9){transform: rotateY(320deg)
-    translateZ(300px);}
-.contenido-carrousel figure:nth-child(10){transform: rotateY(360deg)
-    translateZ(300px);}
+/*----desde aca son las tres primeras imagenes----*/
 
-
-.contenido-carrousel img{
-    width: 100%;
-    height: 100%;
-}
-.contenido-carrousel img:hover{
-    transform: scale(1.256);
-    transition: all 300ms linear;
-}
-@keyframes rotar{
-    from{
-        transform: rotateY(0deg);
-    }to{
-        transform: rotateY(360deg);
-    }
-}
-h4{
-    padding-bottom: 10px;
-    width: 110px;
-    height: 10px;
-    font-family: 'Arial Narrow Bold';
-    color: #c3e128;
-}
 .separador2{
     width: 30px;
     clear: both;
@@ -163,8 +181,22 @@ h4{
 .final:hover{
     transform: scale(1.122);
     transition: all 0.4s linear;
+    filter: drop-shadow(12px 12px 8px rgba(232, 240, 122, 0.6));
 }
 .final img{
     border-style: solid;
     border-color: black;
+    border-radius: 10px;
+}
+
+@keyframes neonEffect{
+    0%, 35%, 45%, 65%, 100%{
+        text-shadow:
+        #c3e128 0 0 8px,
+        #effd6d 0 0 16px,
+        #effd6d 0 0 24px;
+    }
+    40%, 60%{
+        text-shadow:none
+    }
 }
