@@ -90,7 +90,7 @@ h3{
 .container_slider{
     position: absolute;
     max-width: 1500px;
-    height: 800px;
+    height: 600px;
     margin-left: 300px;
     display: flex;
     align-items: center ;
@@ -100,14 +100,12 @@ h3{
 input{
     display: flex;
     justify-content: center;
-    align-items: bottom center;
+    align-items:  center;
    
 }
 .container{
-    width: 100%;
     width: 800px;
     height: 600px;
-    height: 100%;
     transform-style: preserve-3d;
     display: flex;
     justify-content: center;
@@ -200,8 +198,8 @@ input{
     }
 }
 .textin{
-    position: absolute;
-    height: 35px;
+    position: relative;
+    height: 25px;
     left: 20%;
     top: 20%;
     transform: translate(-50%, -50%);
@@ -210,7 +208,7 @@ input{
     place-items: center;
     font-family: 'Xxix';
     font-weight: 600;
-    font-size: 35px;
+    font-size: medium;
     letter-spacing: 1.2px;
     text-transform: uppercase;
     -webkit-background-clip: text;
