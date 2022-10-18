@@ -66,7 +66,7 @@ h2{
 
 .card1{
     width: 1350px;
-    height: 350px;
+    height: 250px;
     margin: 36px;
     padding: 10px;
     box-shadow: 20px 20px 50px rgba(232, 240, 122, 0.6);
@@ -204,7 +204,7 @@ input{
     }
 }
 .textin{
-    height: 10px;
+    height: 25px;
     width: 50px;
     transform: translate(-50%, -50%);
     background: linear-gradient(-415deg,#bf5b04,#bf5b04,#280413,#280413,#1fe1f7,#1fe1f7);
