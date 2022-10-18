@@ -137,10 +137,10 @@ input{
     object-fit: cover;
 }
 .cards img:hover{
-    transform: scale(1.122);
+    transform: scale(1.522);
     transition: all 0.4s linear;
     box-shadow: 1px 1px 15px 15px  rgba(232, 240, 122, 0.6);
-    transition: all 300ms;
+    
 }
 
 #item-2:checked ~ .cards #selector-1,
