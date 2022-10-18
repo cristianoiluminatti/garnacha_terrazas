@@ -39,7 +39,7 @@ body{
     background: #a34f4f;
     
 }  
-/*------hasta aca es el menu------*/
+
 h1{
     margin: 30px;
     width: 200px;
@@ -85,7 +85,7 @@ h3{
     height:  30px;
     clear: both;
 }
-/*---desde aca es eñ carrusel de fotos triple---*/
+
 .container_slider{
     position: absolute;
     max-width: 1500px;
@@ -163,7 +163,7 @@ input{
     z-index: 1;
 }
 
-/*----desde aca son las tres primeras imagenes----*/
+
 
 .separador2{
     width: 30px;
