@@ -197,7 +197,7 @@ input{
         text-shadow:none
     }
 }
-.textin{
+.text{
     position: relative;
     height: 25px;
     left: 20%;
@@ -205,10 +205,10 @@ input{
     transform: translate(-50%, -50%);
     background: linear-gradient(-415deg,#bf5b04,#bf5b04,#280413,#280413,#1fe1f7,#1fe1f7);
     background-size: 300%;
-    place-items: left bottom;
+    place-items: left ;
     font-family: 'Xxix';
     font-weight: 600;
-    font-size: medium;
+    font-size: 15px;
     letter-spacing: 1.2px;
     text-transform: uppercase;
     -webkit-background-clip: text;
